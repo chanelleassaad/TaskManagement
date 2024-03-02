@@ -1,9 +1,13 @@
-import Button from '@mui/material/Button';
+import Button, { ButtonProps } from "@mui/material/Button";
 
-function CreateButton() {
+function CreateButton({ ...props }: ButtonProps) {
   return (
-    <Button variant='outlined'>Create</Button>
-  )
+    <>
+      <Button variant="outlined" {...props}>
+        Create
+      </Button>
+    </>
+  );
 }
 
 export default CreateButton;
