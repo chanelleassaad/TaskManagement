@@ -1,0 +1,12 @@
+Steps followed & difficulties incountered
+
+1. started by writing and drawing a small sketch of how the application is going to work and what functionalities it has
+2- created the project and installed material ui
+3- followed the atomic design pattern to create my folders 
+(I'm not sure if I arranged them correctly and wasn't sure what should be in the feature page)
+4- wrote the atomic components till i got to the template components
+
+I had a problem with the id uniqueness;
+first i was fetching the length of the tasks array and adding 1, but if an item was deleted that would cause problem
+so i started fetching the id of the last element and adding 1, however if there was no task in the array that would cause a problem
+so i made sure if the array is empty the id would be 1 

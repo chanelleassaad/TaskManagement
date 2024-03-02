@@ -10,6 +10,7 @@ function TaskInput({ onCreate }: TaskInputProps) {
   const [taskName, setTaskName] = useState("");
 
   const handleCreate = () => {
+    // trim incase the user only inputs spaces
     if (taskName.trim() !== "") {
       onCreate(taskName);
       setTaskName("");
